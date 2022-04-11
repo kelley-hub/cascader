@@ -107,7 +107,7 @@ class Form extends Component {
         <form onSubmit={this.onSubmit}>
           <p>
             {form.getFieldDecorator('address', {
-              initialValue: [],
+              initialValue: ['zj', 'hangzhou'],
               rules: [{ required: true, type: 'array' }],
             })(<CascaderInput placeholder="please select address" options={addressOptions} />)}
             <span style={{ color: '#f50' }}>
